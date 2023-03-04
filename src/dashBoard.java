@@ -18,9 +18,9 @@ public class dashBoard extends javax.swing.JFrame {
     public dashBoard() {
         initComponents();
     }
-Color navcolor = new Color(0,0,102);
-Color headcolor = new Color(153,0,0);
-Color bodycolor = new Color(255,204,153);
+Color navcolor = new Color(173,216,230);
+Color headcolor = new Color(176,224,230);
+Color bodycolor = new Color(135,206,235);
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -39,20 +39,25 @@ Color bodycolor = new Color(255,204,153);
         jLabel2 = new javax.swing.JLabel();
         reportspane = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        settings = new javax.swing.JPanel();
+        jLabel8 = new javax.swing.JLabel();
         header = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         maindesktop = new javax.swing.JDesktopPane();
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(255, 204, 153));
         jPanel1.setPreferredSize(new java.awt.Dimension(760, 420));
         jPanel1.setLayout(null);
 
-        navbar.setBackground(new java.awt.Color(0, 0, 102));
+        navbar.setBackground(new java.awt.Color(173, 216, 230));
 
-        dashpane.setBackground(new java.awt.Color(0, 0, 102));
+        dashpane.setBackground(new java.awt.Color(95, 158, 160));
+        dashpane.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         dashpane.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 dashpaneMouseClicked(evt);
@@ -67,13 +72,14 @@ Color bodycolor = new Color(255,204,153);
         dashpane.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setBackground(new java.awt.Color(0, 0, 102));
-        jLabel1.setFont(new java.awt.Font("MV Boli", 0, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 255, 204));
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(70, 130, 180));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("DASHBOARD");
-        dashpane.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 11, 170, -1));
+        dashpane.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 3, 170, 30));
 
-        userpane.setBackground(new java.awt.Color(0, 0, 102));
+        userpane.setBackground(new java.awt.Color(95, 158, 160));
+        userpane.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         userpane.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 userpaneMouseClicked(evt);
@@ -87,14 +93,15 @@ Color bodycolor = new Color(255,204,153);
         });
         userpane.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setBackground(new java.awt.Color(0, 0, 102));
-        jLabel2.setFont(new java.awt.Font("MV Boli", 0, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 255, 204));
+        jLabel2.setBackground(new java.awt.Color(135, 206, 235));
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(70, 130, 180));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("USER PAGE");
-        userpane.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 11, 170, -1));
+        userpane.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 3, 170, 30));
 
-        reportspane.setBackground(new java.awt.Color(0, 0, 102));
+        reportspane.setBackground(new java.awt.Color(95, 158, 160));
+        reportspane.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         reportspane.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 reportspaneMouseEntered(evt);
@@ -106,11 +113,40 @@ Color bodycolor = new Color(255,204,153);
         reportspane.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setBackground(new java.awt.Color(0, 0, 102));
-        jLabel3.setFont(new java.awt.Font("MV Boli", 0, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 255, 204));
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(70, 130, 180));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("REPORTS");
-        reportspane.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 11, 170, -1));
+        reportspane.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 3, 170, 30));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Your paragraph text (1).png"))); // NOI18N
+
+        settings.setBackground(new java.awt.Color(95, 158, 160));
+        settings.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        settings.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                settingsMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                settingsMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                settingsMouseExited(evt);
+            }
+        });
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons8-automatic-80.png"))); // NOI18N
+
+        javax.swing.GroupLayout settingsLayout = new javax.swing.GroupLayout(settings);
+        settings.setLayout(settingsLayout);
+        settingsLayout.setHorizontalGroup(
+            settingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel8)
+        );
+        settingsLayout.setVerticalGroup(
+            settingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 77, Short.MAX_VALUE)
+        );
 
         javax.swing.GroupLayout navbarLayout = new javax.swing.GroupLayout(navbar);
         navbar.setLayout(navbarLayout);
@@ -119,25 +155,39 @@ Color bodycolor = new Color(255,204,153);
             .addComponent(dashpane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(userpane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(reportspane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, navbarLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel6)
+                .addContainerGap())
+            .addGroup(navbarLayout.createSequentialGroup()
+                .addGap(42, 42, 42)
+                .addComponent(settings, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         navbarLayout.setVerticalGroup(
             navbarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(navbarLayout.createSequentialGroup()
-                .addGap(150, 150, 150)
+                .addContainerGap()
+                .addComponent(jLabel6)
+                .addGap(48, 48, 48)
                 .addComponent(dashpane, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(46, 46, 46)
+                .addGap(34, 34, 34)
                 .addComponent(userpane, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36)
+                .addGap(28, 28, 28)
                 .addComponent(reportspane, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(175, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(settings, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(61, Short.MAX_VALUE))
         );
 
         jPanel1.add(navbar);
         navbar.setBounds(0, 0, 170, 530);
 
-        header.setBackground(new java.awt.Color(153, 0, 0));
+        header.setBackground(new java.awt.Color(176, 224, 230));
 
+        jLabel5.setBackground(new java.awt.Color(70, 130, 180));
         jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(70, 130, 180));
         jLabel5.setText("THIS PROGRAM IS INTENDED FOR GOVERNMENT USE ONLY");
 
         javax.swing.GroupLayout headerLayout = new javax.swing.GroupLayout(header);
@@ -160,7 +210,8 @@ Color bodycolor = new Color(255,204,153);
         jPanel1.add(header);
         header.setBounds(140, 0, 820, 60);
 
-        maindesktop.setBackground(new java.awt.Color(255, 204, 153));
+        maindesktop.setBackground(new java.awt.Color(135, 206, 235));
+        maindesktop.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/download-removebg-preview.png"))); // NOI18N
 
@@ -170,21 +221,21 @@ Color bodycolor = new Color(255,204,153);
         maindesktop.setLayout(maindesktopLayout);
         maindesktopLayout.setHorizontalGroup(
             maindesktopLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(maindesktopLayout.createSequentialGroup()
-                .addGap(242, 242, 242)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, maindesktopLayout.createSequentialGroup()
+                .addContainerGap(299, Short.MAX_VALUE)
                 .addComponent(jLabel4)
-                .addContainerGap(313, Short.MAX_VALUE))
+                .addGap(254, 254, 254))
         );
         maindesktopLayout.setVerticalGroup(
             maindesktopLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(maindesktopLayout.createSequentialGroup()
-                .addGap(84, 84, 84)
+                .addGap(85, 85, 85)
                 .addComponent(jLabel4)
-                .addContainerGap(101, Short.MAX_VALUE))
+                .addContainerGap(108, Short.MAX_VALUE))
         );
 
         jPanel1.add(maindesktop);
-        maindesktop.setBounds(170, 60, 780, 410);
+        maindesktop.setBounds(170, 60, 780, 420);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -235,6 +286,20 @@ Color bodycolor = new Color(255,204,153);
         maindesktop.add(dbp).setVisible(true);
     }//GEN-LAST:event_dashpaneMouseClicked
 
+    private void settingsMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_settingsMouseEntered
+      settings.setBackground(bodycolor);
+    }//GEN-LAST:event_settingsMouseEntered
+
+    private void settingsMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_settingsMouseExited
+     settings.setBackground(navcolor);
+    }//GEN-LAST:event_settingsMouseExited
+
+    private void settingsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_settingsMouseClicked
+        settingsPage set = new settingsPage();
+        maindesktop.add(set).setVisible(true);
+         
+    }//GEN-LAST:event_settingsMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -278,10 +343,13 @@ Color bodycolor = new Color(255,204,153);
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JDesktopPane maindesktop;
     private javax.swing.JPanel navbar;
     private javax.swing.JPanel reportspane;
+    private javax.swing.JPanel settings;
     private javax.swing.JPanel userpane;
     // End of variables declaration//GEN-END:variables
 }
